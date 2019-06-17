@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="36.69929">
+<testcase classname="Associate Campaign To Lead" name="Associating Campaign to Lead" time="36.69929">
+<failure message="java.lang.AssertionError: expected [true] but found [false]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:93)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:512)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:51)&#13;&#10;&#9;at com.inmarsat.sfdc.pages.LeadPage.input_leadCreateData(LeadPage.java:227)&#13;&#10;&#9;at com.inmarsat.sfdc.stepdefinitions.AssociateCampaignToLeadStepDefs.existing_lead(AssociateCampaignToLeadStepDefs.java:59)&#13;&#10;&#9;at ✽.And existing lead(AssociateCampaignToLead.feature:12)&#13;&#10;"><![CDATA[Given user launch the salesforce application................................passed
+And user able to login......................................................passed
+When the user has a existing campaign.......................................passed
+And existing lead...........................................................failed
+Then Campaign added to Lead.................................................skipped
+Then Validate adding Campaign to Lead is success............................skipped
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertTrue(Assert.java:41)
+	at org.testng.Assert.assertTrue(Assert.java:51)
+	at com.inmarsat.sfdc.pages.LeadPage.input_leadCreateData(LeadPage.java:227)
+	at com.inmarsat.sfdc.stepdefinitions.AssociateCampaignToLeadStepDefs.existing_lead(AssociateCampaignToLeadStepDefs.java:59)
+	at ✽.And existing lead(AssociateCampaignToLead.feature:12)
+]]></failure>
+</testcase>
+</testsuite>

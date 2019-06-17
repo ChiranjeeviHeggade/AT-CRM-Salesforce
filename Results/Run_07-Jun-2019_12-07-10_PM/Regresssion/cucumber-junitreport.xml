@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="176.061879">
+<testcase classname="Campaign Creation, Updation and Deletion" name="Creation of Campaign" time="67.042213">
+<system-out><![CDATA[Given user launch the salesforce application................................passed
+Given user able to login....................................................passed
+When user created the new campaign under Campaigns page.....................passed
+Then the new campaign should created successfully...........................passed
+And logout the Application..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Campaign Creation, Updation and Deletion" name="Updation of Campaign" time="41.671431">
+<system-out><![CDATA[Given user launch the salesforce application................................passed
+Given user able to login....................................................passed
+When the user has a existing campaign.......................................passed
+When their is a need to update few fields details...........................passed
+Then user has option to update the details for existing campaign............passed
+]]></system-out>
+</testcase>
+<testcase classname="Campaign Creation, Updation and Deletion" name="Deletion of Campaign" time="67.348235">
+<system-out><![CDATA[Given user launch the salesforce application................................passed
+Given user able to login....................................................passed
+When the user has a existing campaign.......................................passed
+When there is a need to delete any of the existing campaign.................passed
+Then user has option to delete the campaign successfully....................passed
+]]></system-out>
+</testcase>
+</testsuite>

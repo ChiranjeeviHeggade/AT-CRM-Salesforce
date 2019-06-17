@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="150.24854">
+<testcase classname="Associate Campaign To Lead" name="Creation of Campaign" time="38.407892">
+<system-out><![CDATA[Given user launch the salesforce application................................passed
+Given user able to login....................................................passed
+When user created the new campaign under Campaigns page.....................passed
+Then the new campaign should created successfully...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Associate Campaign To Lead" name="Create Lead" time="111.840648">
+<system-out><![CDATA[Given user launch the salesforce application................................passed
+When user able to login.....................................................passed
+Then user created the 'New Lead' under lead page and search the same........passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,10 @@
+Feature: Associate Campaign To Lead
+
+  Background:                                    # AssociateCampaignToLead.feature:3
+    Given user launch the salesforce application # GeneralStepDefs.Launch_Inmarsat_Salesforce_Application()
+
+  @CreateLeadForAviation
+  Scenario: Create Lead and Associate Campaign to it # AssociateCampaignToLead.feature:15
+    When user able to login                          # LoginStepDefs.user_able_to_login()
+    Then Create a lead for associate campaign        # AssociateCampaignToLeadStepDefs.createlead(DataTable)
+    And Associate Campaign to Lead                   # AssociateCampaignToLeadStepDefs.associate_campaign_to_lead()

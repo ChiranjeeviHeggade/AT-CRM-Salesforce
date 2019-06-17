@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="77.679008">
+<testcase classname="Associate Campaign To Lead" name="Associating Campaign to Lead" time="77.679008">
+<system-out><![CDATA[Given user launch the salesforce application................................passed
+And user able to login......................................................passed
+When the user has a existing campaign.......................................passed
+And existing lead...........................................................passed
+Then Campaign added to Lead.................................................passed
+Then Validate adding Campaign to Lead is success............................passed
+]]></system-out>
+</testcase>
+</testsuite>

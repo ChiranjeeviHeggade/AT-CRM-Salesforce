@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="127.052736">
+<testcase classname="Associate Campaign To Lead" name="Create Lead and Associate Campaign to it" time="127.052736">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at com.inmarsat.sfdc.stepdefinitions.AssociateCampaignToLeadStepDefs.associate_campaign_to_lead(AssociateCampaignToLeadStepDefs.java:67)&#13;&#10;&#9;at ✽.And Associate Campaign to Lead(AssociateCampaignToLead.feature:20)&#13;&#10;"><![CDATA[Given user launch the salesforce application................................passed
+When user able to login.....................................................passed
+Then Create a lead for associate campaign...................................passed
+And Associate Campaign to Lead..............................................failed
+
+StackTrace:
+java.lang.NullPointerException
+	at com.inmarsat.sfdc.stepdefinitions.AssociateCampaignToLeadStepDefs.associate_campaign_to_lead(AssociateCampaignToLeadStepDefs.java:67)
+	at ✽.And Associate Campaign to Lead(AssociateCampaignToLead.feature:20)
+]]></failure>
+</testcase>
+</testsuite>

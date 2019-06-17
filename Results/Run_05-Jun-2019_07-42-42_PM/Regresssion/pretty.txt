@@ -1,0 +1,23 @@
+Feature: Associate Campaign To Lead
+
+  Background:                                    # AssociateCampaignToLead.feature:3
+    Given user launch the salesforce application # GeneralStepDefs.Launch_Inmarsat_Salesforce_Application()
+
+  @CreateLeadForAviation
+  Scenario: Create Lead and Associate Campaign to it # AssociateCampaignToLead.feature:15
+    When user able to login                          # LoginStepDefs.user_able_to_login()
+    Then Create a lead for associate campaign        # AssociateCampaignToLeadStepDefs.createlead(DataTable)
+    And Associate Campaign to Lead                   # AssociateCampaignToLeadStepDefs.associate_campaign_to_lead()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (4ecd0b4e9362d509b794fa41a7e595b4)] -> xpath: //div[@class='slds-truncate'][contains(text(),'Add to Campaign')]] (tried for 20 second(s) with 500 milliseconds interval)
+      Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+      System info: host: 'QT-INBG-LT0548', ip: '10.20.12.118', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\CHIRAN~1.HEG\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58969}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}
+      Session ID: 4ecd0b4e9362d509b794fa41a7e595b4
+      	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+      	at com.inmarsat.sfdc.pages.TestBase.WaitforElement(TestBase.java:47)
+      	at com.inmarsat.sfdc.pages.AssociateCampaignToLeadPage.clickaddCampaign(AssociateCampaignToLeadPage.java:41)
+      	at com.inmarsat.sfdc.stepdefinitions.AssociateCampaignToLeadStepDefs.associate_campaign_to_lead(AssociateCampaignToLeadStepDefs.java:69)
+      	at ✽.And Associate Campaign to Lead(AssociateCampaignToLead.feature:20)
+

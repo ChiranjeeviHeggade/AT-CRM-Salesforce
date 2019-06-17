@@ -1,0 +1,18 @@
+Feature: Associate Campaign To Lead
+
+  Background:                                    # AssociateCampaignToLead.feature:3
+    Given user launch the salesforce application # GeneralStepDefs.Launch_Inmarsat_Salesforce_Application()
+
+  @CreateCampaignForAviation
+  Scenario: Creation of Campaign                            # AssociateCampaignToLead.feature:7
+    Given user able to login                                # LoginStepDefs.user_able_to_login()
+    When user created the new campaign under Campaigns page # CampaignsStepDefs.create_Campaign(DataTable)
+    Then the new campaign should created successfully       # CampaignsStepDefs.campaign_Created_Successfully()
+
+  Background:                                    # AssociateCampaignToLead.feature:3
+    Given user launch the salesforce application # GeneralStepDefs.Launch_Inmarsat_Salesforce_Application()
+
+  @CreateLeadForAviation
+  Scenario: Create Lead                                                  # AssociateCampaignToLead.feature:15
+    When user able to login                                              # LoginStepDefs.user_able_to_login()
+    Then user created the 'New Lead' under lead page and search the same # LeadStepDefs.create_lead(DataTable)

@@ -1,0 +1,16 @@
+Feature: Associate Campaign To Lead
+
+  Background:                                    # AssociateCampaignToLead.feature:3
+    Given user launch the salesforce application # GeneralStepDefs.Launch_Inmarsat_Salesforce_Application()
+    And user able to login                       # LoginStepDefs.user_able_to_login()
+
+  @AssociateCampaignToLead
+  Scenario: Associating Campaign to Lead             # AssociateCampaignToLead.feature:8
+    When the user has a existing campaign            # CampaignsStepDefs.checking_the_Existing_campaign(DataTable)
+    And existing lead                                # AssociateCampaignToLeadStepDefs.existing_lead(DataTable)
+      java.lang.NullPointerException
+      	at com.inmarsat.sfdc.stepdefinitions.AssociateCampaignToLeadStepDefs.existing_lead(AssociateCampaignToLeadStepDefs.java:58)
+      	at ✽.And existing lead(AssociateCampaignToLead.feature:12)
+
+    Then Campaign added to Lead                      # AssociateCampaignToLeadStepDefs.associate_campaign_to_lead()
+    Then Validate adding Campaign to Lead is success # AssociateCampaignToLeadStepDefs.validate_adding_campaign_to_lead_is_success()

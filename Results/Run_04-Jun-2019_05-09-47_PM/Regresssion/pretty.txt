@@ -1,0 +1,67 @@
+Feature: Campaign Creation, Updation and Deletion
+
+  Background:                                   # Campaign.feature:3
+    Given user lunch the salesforce application # GeneralStepDefs.Launch_Inmarsat_Salesforce_Application()
+
+  ###
+  ### All BU's Campaign Creation
+  ###
+  @Aviation @ABU @Campaign @AviationCampaignCreation
+  Scenario: Creation of Campaign                            # Campaign.feature:14
+    Given user able to login                                # LoginStepDefs.user_able_to_login()
+    #And the user is a ABU Profile group member
+    When user created the new campaign under Campaigns page # CampaignsStepDefs.create_Campaign(DataTable)
+    Then the new campaign should created successfully       # CampaignsStepDefs.campaign_Created_Successfully()
+
+  Background:                                   # Campaign.feature:3
+    Given user lunch the salesforce application # GeneralStepDefs.Launch_Inmarsat_Salesforce_Application()
+
+  @Maritime @MBU @Campaign @MaritimeCampaignCreation
+  Scenario: Creation of Campaign                            # Campaign.feature:27
+    Given user able to login                                # LoginStepDefs.user_able_to_login()
+    #And the user is a ABU Profile group member
+    When user created the new campaign under Campaigns page # CampaignsStepDefs.create_Campaign(DataTable)
+    Then the new campaign should created successfully       # CampaignsStepDefs.campaign_Created_Successfully()
+
+  Background:                                   # Campaign.feature:3
+    Given user lunch the salesforce application # GeneralStepDefs.Launch_Inmarsat_Salesforce_Application()
+
+  @Enterprise @EBU @Campaign @EnterpriseCampaignCreation
+  Scenario: Creation of Campaign                            # Campaign.feature:40
+    Given user able to login                                # LoginStepDefs.user_able_to_login()
+    #And the user is a ABU Profile group member
+    When user created the new campaign under Campaigns page # CampaignsStepDefs.create_Campaign(DataTable)
+    Then the new campaign should created successfully       # CampaignsStepDefs.campaign_Created_Successfully()
+
+  Background:                                   # Campaign.feature:3
+    Given user lunch the salesforce application # GeneralStepDefs.Launch_Inmarsat_Salesforce_Application()
+
+  @G2 @Campaign @G2CampaignCreation
+  Scenario: Creation of Campaign                            # Campaign.feature:52
+    Given user able to login                                # LoginStepDefs.user_able_to_login()
+    #And the user is a ABU Profile group member
+    When user created the new campaign under Campaigns page # CampaignsStepDefs.create_Campaign(DataTable)
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on XP (c33985fce3699a3ffba3b663fba32a29)] -> xpath: //a[@title='Webinar']] (tried for 20 second(s) with 500 milliseconds interval)
+      Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+      System info: host: 'QT-INBG-LT0552', ip: '10.20.12.64', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\MADHU~1.BOY\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50306}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.169, webStorageEnabled: true}
+      Session ID: c33985fce3699a3ffba3b663fba32a29
+      	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+      	at com.inmarsat.sfdc.pages.TestBase.WaitforElement(TestBase.java:47)
+      	at com.inmarsat.sfdc.pages.CampaignsPage.create_campaign(CampaignsPage.java:109)
+      	at com.inmarsat.sfdc.stepdefinitions.CampaignsStepDefs.create_Campaign(CampaignsStepDefs.java:32)
+      	at ✽.When user created the new campaign under Campaigns page(Campaign.feature:55)
+
+    Then the new campaign should created successfully       # CampaignsStepDefs.campaign_Created_Successfully()
+
+  Background:                                   # Campaign.feature:3
+    Given user lunch the salesforce application # GeneralStepDefs.Launch_Inmarsat_Salesforce_Application()
+
+  @USG @Campaign @USGCampaignCreation
+  Scenario: Creation of Campaign                            # Campaign.feature:63
+    Given user able to login                                # LoginStepDefs.user_able_to_login()
+    #And the user is a ABU Profile group member
+    When user created the new campaign under Campaigns page # CampaignsStepDefs.create_Campaign(DataTable)
+    Then the new campaign should created successfully       # CampaignsStepDefs.campaign_Created_Successfully()

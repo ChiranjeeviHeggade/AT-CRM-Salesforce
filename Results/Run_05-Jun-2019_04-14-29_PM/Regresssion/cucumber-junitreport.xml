@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="280.607325">
+<testcase classname="Campaign Creation, Updation and Deletion" name="Creation of Campaign" time="56.587455">
+<system-out><![CDATA[Given user lunch the salesforce application.................................passed
+Given user able to login....................................................passed
+When user created the new campaign under Campaigns page.....................passed
+Then the new campaign should created successfully...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Campaign Creation, Updation and Deletion" name="Creation of Campaign" time="111.783728">
+<system-out><![CDATA[Given user lunch the salesforce application.................................passed
+Given user able to login....................................................passed
+When user created the new campaign under Campaigns page.....................passed
+Then the new campaign should created successfully...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Campaign Creation, Updation and Deletion" name="Creation of Campaign" time="36.613362">
+<system-out><![CDATA[Given user lunch the salesforce application.................................passed
+Given user able to login....................................................passed
+When user created the new campaign under Campaigns page.....................passed
+Then the new campaign should created successfully...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Campaign Creation, Updation and Deletion" name="Creation of Campaign" time="38.43585">
+<system-out><![CDATA[Given user lunch the salesforce application.................................passed
+Given user able to login....................................................passed
+When user created the new campaign under Campaigns page.....................passed
+Then the new campaign should created successfully...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Campaign Creation, Updation and Deletion" name="Creation of Campaign" time="37.18693">
+<system-out><![CDATA[Given user lunch the salesforce application.................................passed
+Given user able to login....................................................passed
+When user created the new campaign under Campaigns page.....................passed
+Then the new campaign should created successfully...........................passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="38.24556">
+<testcase classname="Associate Campaign To Lead" name="Associating Campaign to Lead" time="38.24556">
+<failure message="java.lang.NullPointerException&#13;&#10;&#9;at com.inmarsat.sfdc.stepdefinitions.AssociateCampaignToLeadStepDefs.existing_lead(AssociateCampaignToLeadStepDefs.java:58)&#13;&#10;&#9;at ✽.And existing lead(AssociateCampaignToLead.feature:12)&#13;&#10;"><![CDATA[Given user launch the salesforce application................................passed
+And user able to login......................................................passed
+When the user has a existing campaign.......................................passed
+And existing lead...........................................................failed
+Then Campaign added to Lead.................................................skipped
+Then Validate adding Campaign to Lead is success............................skipped
+
+StackTrace:
+java.lang.NullPointerException
+	at com.inmarsat.sfdc.stepdefinitions.AssociateCampaignToLeadStepDefs.existing_lead(AssociateCampaignToLeadStepDefs.java:58)
+	at ✽.And existing lead(AssociateCampaignToLead.feature:12)
+]]></failure>
+</testcase>
+</testsuite>

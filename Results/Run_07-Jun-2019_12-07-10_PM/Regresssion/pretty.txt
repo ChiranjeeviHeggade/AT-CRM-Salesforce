@@ -1,0 +1,45 @@
+Feature: Campaign Creation, Updation and Deletion
+
+  Background:                                    # Campaign.feature:3
+    Given user launch the salesforce application # GeneralStepDefs.Launch_Inmarsat_Salesforce_Application()
+
+  ###
+  ### All BU's Campaign Creation
+  ###
+  @Aviation @Campaign @AviationCampaignCreation
+  Scenario: Creation of Campaign                            # Campaign.feature:13
+    Given user able to login                                # LoginStepDefs.user_able_to_login()
+    #And the user is a ABU Profile group member
+    When user created the new campaign under Campaigns page # CampaignsStepDefs.create_Campaign(DataTable)
+    Then the new campaign should created successfully       # CampaignsStepDefs.campaign_Created_Successfully()
+    And logout the Application                              # LoginStepDefs.i_logout()
+
+  Background:                                    # Campaign.feature:3
+    Given user launch the salesforce application # GeneralStepDefs.Launch_Inmarsat_Salesforce_Application()
+
+  #And logout the Application
+  ###
+  ### All BU's Campaign Updation
+  ###
+  @Aviation @Campaign @AviationCampaignUpdation
+  Scenario: Updation of Campaign                                     # Campaign.feature:84
+    Given user able to login                                         # LoginStepDefs.user_able_to_login()
+    When the user has a existing campaign                            # CampaignsStepDefs.checking_the_Existing_campaign(DataTable)
+    #And the user belongs to ABU profile
+    When their is a need to update few fields details                # CampaignsStepDefs.need_to_Update_Campaign()
+    Then user has option to update the details for existing campaign # CampaignsStepDefs.update_Campaign()
+
+  Background:                                    # Campaign.feature:3
+    Given user launch the salesforce application # GeneralStepDefs.Launch_Inmarsat_Salesforce_Application()
+
+  #And logout the Application
+  ###
+  ### All BU's Campaign Deletion
+  ###
+  @Aviation @Campaign @AviationCampaignDeletion
+  Scenario: Deletion of Campaign                                # Campaign.feature:164
+    Given user able to login                                    # LoginStepDefs.user_able_to_login()
+    When the user has a existing campaign                       # CampaignsStepDefs.checking_the_Existing_campaign(DataTable)
+    #And the user belongs to ABU profile
+    When there is a need to delete any of the existing campaign # CampaignsStepDefs.need_to_delete_campaign()
+    Then user has option to delete the campaign successfully    # CampaignsStepDefs.delete_the_Campaign()

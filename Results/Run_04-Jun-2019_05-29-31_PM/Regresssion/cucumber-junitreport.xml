@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="41.547948">
+<testcase classname="Campaign Creation, Updation and Deletion" name="Creation of Campaign" time="41.547948">
+<system-out><![CDATA[Given user lunch the salesforce application.................................passed
+Given user able to login....................................................passed
+When user created the new campaign under Campaigns page.....................passed
+Then the new campaign should created successfully...........................passed
+]]></system-out>
+</testcase>
+</testsuite>

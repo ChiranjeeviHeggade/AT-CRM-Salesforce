@@ -1,0 +1,54 @@
+Feature: Campaign Creation, Updation and Deletion
+
+  Background:                                   # Campaign.feature:3
+    Given user lunch the salesforce application # GeneralStepDefs.Launch_Inmarsat_Salesforce_Application()
+
+  ###
+  ### All BU's Campaign Creation
+  ###
+  @Aviation @ABU @Campaign @AviationCampaignCreation
+  Scenario: Creation of Campaign                            # Campaign.feature:14
+    Given user able to login                                # LoginStepDefs.user_able_to_login()
+    #And the user is a ABU Profile group member
+    When user created the new campaign under Campaigns page # CampaignsStepDefs.create_Campaign(DataTable)
+    Then the new campaign should created successfully       # CampaignsStepDefs.campaign_Created_Successfully()
+
+  Background:                                   # Campaign.feature:3
+    Given user lunch the salesforce application # GeneralStepDefs.Launch_Inmarsat_Salesforce_Application()
+
+  @Maritime @MBU @Campaign @MaritimeCampaignCreation
+  Scenario: Creation of Campaign                            # Campaign.feature:27
+    Given user able to login                                # LoginStepDefs.user_able_to_login()
+    #And the user is a MBU Profile group member
+    When user created the new campaign under Campaigns page # CampaignsStepDefs.create_Campaign(DataTable)
+    Then the new campaign should created successfully       # CampaignsStepDefs.campaign_Created_Successfully()
+
+  Background:                                   # Campaign.feature:3
+    Given user lunch the salesforce application # GeneralStepDefs.Launch_Inmarsat_Salesforce_Application()
+
+  @Enterprise @EBU @Campaign @EnterpriseCampaignCreation
+  Scenario: Creation of Campaign                            # Campaign.feature:40
+    Given user able to login                                # LoginStepDefs.user_able_to_login()
+    #And the user is a EBU Profile group member
+    When user created the new campaign under Campaigns page # CampaignsStepDefs.create_Campaign(DataTable)
+    Then the new campaign should created successfully       # CampaignsStepDefs.campaign_Created_Successfully()
+
+  Background:                                   # Campaign.feature:3
+    Given user lunch the salesforce application # GeneralStepDefs.Launch_Inmarsat_Salesforce_Application()
+
+  @G2 @Campaign @G2CampaignCreation
+  Scenario: Creation of Campaign                            # Campaign.feature:52
+    Given user able to login                                # LoginStepDefs.user_able_to_login()
+    #And the user is a G2 Profile group member
+    When user created the new campaign under Campaigns page # CampaignsStepDefs.create_Campaign(DataTable)
+    Then the new campaign should created successfully       # CampaignsStepDefs.campaign_Created_Successfully()
+
+  Background:                                   # Campaign.feature:3
+    Given user lunch the salesforce application # GeneralStepDefs.Launch_Inmarsat_Salesforce_Application()
+
+  @USG @Campaign @USGCampaignCreation
+  Scenario: Creation of Campaign                            # Campaign.feature:63
+    Given user able to login                                # LoginStepDefs.user_able_to_login()
+    #And the user is a USG Profile group member
+    When user created the new campaign under Campaigns page # CampaignsStepDefs.create_Campaign(DataTable)
+    Then the new campaign should created successfully       # CampaignsStepDefs.campaign_Created_Successfully()

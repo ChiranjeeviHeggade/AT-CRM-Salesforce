@@ -1,0 +1,15 @@
+Feature: Associate Campaign To Lead
+
+  Background:                                    # AssociateCampaignToLead.feature:3
+    Given user launch the salesforce application # GeneralStepDefs.Launch_Inmarsat_Salesforce_Application()
+
+  @CreateLeadForAviation
+  Scenario: Create Lead and Associate Campaign to it # AssociateCampaignToLead.feature:15
+    When user able to login                          # LoginStepDefs.user_able_to_login()
+    Then Create a lead for associate campaign        # AssociateCampaignToLeadStepDefs.createlead(DataTable)
+    And Associate Campaign to Lead                   # AssociateCampaignToLeadStepDefs.associate_campaign_to_lead()
+      java.lang.NullPointerException
+      	at com.inmarsat.sfdc.pages.AssociateCampaignToLeadPage.<init>(AssociateCampaignToLeadPage.java:59)
+      	at com.inmarsat.sfdc.stepdefinitions.AssociateCampaignToLeadStepDefs.associate_campaign_to_lead(AssociateCampaignToLeadStepDefs.java:63)
+      	at ✽.And Associate Campaign to Lead(AssociateCampaignToLead.feature:20)
+

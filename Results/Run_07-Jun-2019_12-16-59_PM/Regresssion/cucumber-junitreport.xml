@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="42.89986">
+<testcase classname="Campaign Creation, Updation and Deletion" name="Updation of Campaign" time="42.89986">
+<system-out><![CDATA[Given user launch the salesforce application................................passed
+Given user able to login....................................................passed
+When the user has a existing campaign.......................................passed
+When their is a need to update few fields details...........................passed
+Then user has option to update the details for existing campaign............passed
+]]></system-out>
+</testcase>
+</testsuite>

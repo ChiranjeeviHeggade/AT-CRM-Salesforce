@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="1" time="70.734948">
+<testcase classname="Associate Campaign To Lead" name="Create Lead and Associate Campaign to it" time="70.734948">
+<skipped><![CDATA[Given user launch the salesforce application................................passed
+When user able to login.....................................................passed
+Then Create a lead for associate campaign...................................passed
+And Associate Campaign to Lead..............................................passed
+And Validate Campaign is added to Lead......................................undefined
+]]></skipped>
+</testcase>
+</testsuite>
